@@ -13,11 +13,12 @@ CivilEngineer::CivilEngineer(){
 // }
 
 std::ostream& operator<<(std::ostream& out, const CivilEngineer& operand){
-    /* out << "CivilEngineer [Full name : " << operand.get_full_name() << 
+    out << "CivilEngineer [Full name : " << operand.get_full_name() << 
                        ", Age : " << operand.get_age() << 
                     ", Adress : " << operand.get_address() <<
+                    // ", Contract count : " << operand.get_contract_count() <<
                     ", practice certificate id : " << operand.m_speciality << "]";
-    return out; */
+    return out;
 }
 
 void CivilEngineer::build_road(){

@@ -1,17 +1,18 @@
 #include <iostream>
 #include "person.h"
 #include "engineer.h"
+#include "civilEngineer.h"
 
 int main(){
-    Person person1("Daniel Gray", 27, "Blue sky St 233 #56");
-    std::cout << "person 1" << person1 << std :: endl;
 
 
-    std::cout << "-----------------------------" << std::endl;
+
     Engineer engineer;
-    // engineer.m_full_name = "sushma biradar";
-    engineer.build_something();
-    std::cout << "engineer " << engineer << std :: endl;
+    CivilEngineer cel1;
+
+
+    // engineer.build_something();
+    std::cout << "engineer " << std :: endl;
 
     return 0;
 };
