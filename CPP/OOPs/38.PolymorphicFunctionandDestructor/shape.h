@@ -1,0 +1,20 @@
+#ifndef SHAPE_H
+#define SHAPE_H
+
+#include <string>
+
+class Shape{
+    protected:
+        Shape() = default;
+        Shape(std::string_view description);
+    public:
+        virtual ~Shape() = default;
+
+        // pure virutal functions. No definition in this class 
+        virtual double perimeter() const = 0;
+        virtual double surface() const = 0;
+    private: 
+        std::string m_description;
+};
+
+#endif
